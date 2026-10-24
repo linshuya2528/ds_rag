@@ -17,3 +17,5 @@ __pycache__/
 # Jupyter transient files
 **/.ipynb_checkpoints/
 /.vscode/
+# Notebook local vector database
+/notebooks/chroma_db/
