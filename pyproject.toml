@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ds-rag"
+version = "0.1.0"
+description = "A local, evidence-grounded course-material RAG system."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "chromadb>=0.5",
+  "pymupdf>=1.24",
+  "python-dotenv>=1.0",
+  "python-pptx>=0.6.23",
+  "requests>=2.31",
+  "sentence-transformers>=3.0",
+  "streamlit>=1.37",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+rag = "rag.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

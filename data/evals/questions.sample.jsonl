@@ -1,0 +1,2 @@
+{"id":"tcp-handshake-001","question":"TCP 为什么需要三次握手？","category":"传输层","difficulty":"medium","expected_sources":["test.pdf"],"expected_pages":[1],"reference_points":["客户端与服务端确认双方收发能力"],"answerable":true}
+{"id":"out-of-scope-001","question":"本课程资料中给出了哪一天的天气预报？","category":"拒答","difficulty":"easy","expected_sources":[],"expected_pages":[],"reference_points":[],"answerable":false}
