@@ -16,3 +16,4 @@ __pycache__/
 
 # Jupyter transient files
 **/.ipynb_checkpoints/
+/.vscode/
